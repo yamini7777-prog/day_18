@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="'en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="'viewport" content="width=device-width,inital-scale=1.0">
+    <title>Deposit Application</title>
+</head>
+
+<body>
+    <center>
+        <ins>
+            <h2>FIXED DEPOSIT APPLICATION FROM</h2>
+        </ins>
+    </center>
+    <br>
+    <fieldset>
+        <div>
+            <ul>
+                <li>To</li>
+                <li>The Manger</li>
+                <li>State Bank Of India</li>
+                <li>Warangal,Telangana</li>
+            </ul>
+        </div>
+    </fieldset>
+    <h3>Dear Sir</h3>
+    <br>
+    <form action="https://httpbin.org/post" method="post">
+
+        <fieldset>
+            <legend>DEPOSIT WAY</legend>
+            Type of Deposit:<input type="checkbox"><span>Ordinary</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="checkbox"><span>Cheqe book</span>
+        </fieldset>
+
+        <br>
+        <br>
+        <fieldset>
+            <legend>CONDITIONS</legend>
+            <input type="checkbox"><span>I agree to the conditions and rules</span>
+            <br>
+            <br>
+            <input type="checkbox"><span>I agree to the conditions and rules for cheqe deposit</span>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>bank detalis</legend>
+            <label for="bank name"> bank Name:</label>
+            <input type="text" id="bank name" name="bank name" placeholder="enter bank name" required>
+            &emsp;&emsp;&emsp;&emsp;
+            <label for="IFSC CODE">IFSC CODE:</label>
+            <input type="text" id="IFSC CODE" name="IFSC CODE" placeholder="enter IFSC CODE" minlength="3"
+                maxlength="10" required>
+            <br>
+
+        </fieldset>
+        <fieldset>
+            <legend>DEPOSITER DETAILS</legend>
+            <label for="username"> Depositer Name:</label>
+            <input type="text" id="username" name="username" placeholder="enter depositer name" required>
+            &emsp;&emsp;&emsp;<label for="account number">Account number:</label>
+            <input type="number" id="Account number" name="Account number" placeholder="enter account number"
+                minlength="3" maxlength="10" required>
+            <br>
+            <br>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="enter address" pattern="[0-9-aA-z-,-]" required>
+            &emsp;&emsp;&emsp;
+
+            <label>Select state</label>
+            <select>
+                <option>Telangana</option>
+                <option>kerala</option>
+                <option>andhra pradesh</option>
+                <option>karnataka</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>MONEY DETAILS</legend>
+            <label for="Amount Figures">Amount Deposit in Figure:</label>
+            <input type="number" id="Amount Figures" name="Amount Figures" placeholder="enter amount deposit in figures"
+                maxlength="6" required>
+            <br>
+            <br>
+            <label for="Amount Figures in words">Amount Deposit in words:</label>
+            <input type="text" id="Amount Figures in words" name="Amount Figures in words"
+                placeholder="enter amount in words" max="100" required>
+            <br>
+            <br>
+            <label for="Cheque number"> cheque number:</label>
+            <input type="number" id="Cheque numbe"name="Cheque numbe" placeholder="enter Cheque numbe"  max="100000" required>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>FEXID DEPOSIT DETAILS</legend>
+            <label for="Period of Deposite"> Deposite peroid:</label>
+            <input type="number" id="Period of Deposite" name="Peroid of deposite" placeholder="enter depositer peroid"
+                minlength="1" maxlength="2" required>&emsp;&emsp;&emsp;&emsp;
+            <label for="rate of interest"> rate of interest %:</label>
+            <input type="number" id="rate of interest" name="rate of interest" placeholder="enter rate of interest"
+                min="6" max="7" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>DEPOSIT DATES</legend>
+            <label for="date of deposit"> Deposite date:</label>
+            <input type="date" id="date of deposit" name="date of deposit" placeholder="enter deposit date" required>
+            <br>
+            <br>
+            <label for="date of maturity"> maturity date:</label>
+            <input type="date" id="date of maturity" name="date of maturity" placeholder="enter maturity date" required>
+            <br>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>VERIFICATION</legend>
+            <input type="checkbox"><span>APPROVED</span>
+            <br>
+            <br>
+            <input type="checkbox"><span>CHECKED</span>
+            <br>
+            <br>
+            <input type="checkbox"><span>SIGN VERIFIED</span>
+            <input type="text" placeholder="sign verified">
+        </fieldset>
+
+         <hr>
+
+        <input type="submit">
+
+
+
+
+
+
+
+    </form>
+</body>
